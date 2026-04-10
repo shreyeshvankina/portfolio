@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact: Personal site and portfolio</title>
-
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav>
         <a href="../index.html">Home</a>
         <a href="../projects/index.html">Projects</a>
-        <a href="index.html">Contact</a>
+        <a href="index.html" class="current">Contact</a>
         <a href="../resume/index.html">Resume</a>
         <a href="https://github.com/shreyeshvankina" target="_blank">GitHub</a>
     </nav>
+    
     <h1>Contact</h1>
     <form action="mailto:svankina@ucsd.edu" method="POST" enctype="text/plain">
         
@@ -22,19 +22,16 @@
             Your Email:
             <input type="email" name="email">
         </label>
-        <br><br>
 
         <label>
             Subject:
             <input name="subject">
         </label>
-        <br><br>
 
         <label>
             Message:
             <textarea name="body"></textarea>
         </label>
-        <br><br>
 
         <button>Submit</button>
     </form>
