@@ -1,9 +1,12 @@
 
+html {
+  color-scheme: light dark;
+}
+
 :root {
   --color-accent: oklch(65% 50% 0); 
   accent-color: var(--color-accent);
 }
-
 
 body {
   font: 100%/1.5 system-ui;
@@ -16,11 +19,11 @@ nav li {
   display: contents;
 }
 
-
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   margin-bottom: 2em;
-  border-bottom: 1px solid oklch(80% 3% 200);
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
@@ -31,24 +34,28 @@ nav a {
   padding: 0.5em;
 }
 
-
 nav a.current {
-  border-bottom: 0.4em solid oklch(80% 3% 200);
+  border-bottom: 0.4em solid var(--border-color);
   padding-bottom: 0.1em; 
 }
 
-
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
-  padding-bottom: 0.1em; /* Matches .current padding to prevent layout shifts */
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  padding-bottom: 0.1em;
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
-
-input, textarea, button {
+input, textarea, button, select {
   font: inherit;
 }
 
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}
 
 form {
   display: grid;
@@ -65,7 +72,6 @@ form label {
 form button {
   grid-column: 1 / -1; 
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
@@ -92,11 +98,9 @@ h1 {
   margin: 0; 
 }
 
-
 section {
   margin-bottom: 2.5em;
 }
-
 
 section h2 {
   border-bottom: 2px solid var(--color-accent);
@@ -116,7 +120,6 @@ section article header {
   flex-wrap: wrap;
   gap: 0.5em;
 }
-
 
 section article h3 {
   margin: 0;
