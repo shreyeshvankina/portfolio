@@ -8,67 +8,67 @@
   {
     "title": "Housing Price Prediction Model",
     "year": 2025,
-    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "Developed a machine learning model using Python and scikit-learn to predict housing prices based on features like location, size, and amenities, achieving strong regression accuracy."
   },
   {
     "title": "Algorithm Visualizer",
     "year": 2025,
-    "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "An interactive web application that visualizes sorting and pathfinding algorithms such as QuickSort and Dijkstra’s algorithm with real-time animations."
   },
   {
     "title": "Java Inventory Management System",
     "year": 2024,
-    "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "A command-line inventory system built in Java using object-oriented design, supporting product tracking, stock updates, and basic reporting features."
   },
   {
     "title": "Campus Event Finder App",
     "year": 2024,
-    "image": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "A mobile-friendly web app that aggregates campus events, allowing users to browse, filter, and save events using a REST API and local storage."
   },
   {
     "title": "Real-Time Chat Application",
     "year": 2024,
-    "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "Built a real-time chat app using Node.js and WebSockets, supporting multiple chat rooms, live messaging, and user presence indicators."
   },
   {
     "title": "Fitness Tracker Dashboard",
     "year": 2024,
-    "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "A data visualization dashboard that tracks workout activity and health metrics, built with JavaScript and charting libraries to display trends over time."
   },
   {
     "title": "Weather Data Explorer",
     "year": 2023,
-    "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "A web tool that fetches and visualizes historical weather data using public APIs, allowing users to explore temperature and precipitation trends."
   },
   {
     "title": "Task Management CLI Tool",
     "year": 2023,
-    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "A lightweight command-line task manager written in Python, enabling users to create, update, and organize tasks with persistent local storage."
   },
   {
     "title": "Simple E-commerce Backend",
     "year": 2023,
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "Designed a RESTful API using Express.js for an e-commerce platform, handling product listings, user authentication, and order processing."
   },
   {
     "title": "Image Gallery Web App",
     "year": 2023,
-    "image": "https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "A responsive image gallery built with HTML, CSS, and JavaScript, featuring grid layouts, lightbox previews, and lazy loading for performance."
   },
   {
     "title": "Basic CPU Scheduling Simulator",
     "year": 2023,
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&w=400&h=250&fit=crop",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
     "description": "A simulation tool that demonstrates CPU scheduling algorithms like FCFS and Round Robin, helping visualize process execution and wait times."
   }
 ]
