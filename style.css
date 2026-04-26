@@ -140,3 +140,22 @@ section ul {
 section li {
   margin-bottom: 0.4em;
 }
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1em;
+  text-align: center; 
+}
+
+#profile-stats dt {
+  grid-row: 1; 
+  color: oklch(60% 0% 0);
+  font-weight: bold;
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  margin: 0; 
+  font-size: 2em;
+}
