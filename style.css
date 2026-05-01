@@ -188,3 +188,38 @@ path {
 .selected:is(path) {
   fill: var(--color);
 }
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.legend {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 1em;
+    list-style: none;
+    padding: 1.5em;
+    margin: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.legend .swatch {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: var(--color);
+    border-radius: 50%;
+}
