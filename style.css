@@ -197,14 +197,15 @@ path {
 }
 
 .legend {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     gap: 1em;
     list-style: none;
-    padding: 1em;
-    margin: 2em auto;
+    padding: 1.5em;
+    margin: 0;
     border: 1px solid var(--border-color);
-    background-color: transparent;
+    border-radius: 8px;
 }
 
 .legend li {
