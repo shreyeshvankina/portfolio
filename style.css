@@ -223,3 +223,108 @@ path {
     background-color: var(--color);
     border-radius: 50%;
 }
+
+#profile-stats dl, .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1em;
+  text-align: center; 
+}
+
+#profile-stats dt, .stats dt {
+  grid-row: 1; 
+  color: oklch(60% 0% 0);
+  font-weight: bold;
+}
+
+#profile-stats dd, .stats dd {
+  grid-row: 2;
+  margin: 0; 
+  font-size: 2em;
+}
+
+#chart svg {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
+.gridlines line {
+  stroke: var(--border-color, oklch(50% 10% 200 / 20%));
+  stroke-opacity: 0.5;
+}
+
+.gridlines path {
+  display: none;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: canvas;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5em 1em;
+  margin: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info dt {
+  color: oklch(60% 0% 0);
+  font-weight: 500;
+}
+
+dl.info dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+  display: grid; 
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; 
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: var(--color-accent, black);
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+#language-breakdown {
+  margin-top: 2em;
+}
