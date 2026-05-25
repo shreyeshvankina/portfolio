@@ -150,6 +150,12 @@ function updateScatterPlotCircles(commitsToUpdate) {
   const svg = d3.select('#chart').select('svg');
   const dots = svg.select('g.dots');
 
+  xScale = xScale.domain(d3.extent(commitsToUpdate, (d) => d.datetime));
+
+  const xAxisGroup = svg.select('g.x-axis');
+  xAxisGroup.selectAll('*').remove();
+  xAxisGroup.call(d3.axisBottom(xScale));
+
   const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
   const rScale = d3.scaleSqrt().domain([minLines || 1, maxLines || 100]).range([2, 30]);
   const sortedCommits = d3.sort(commitsToUpdate, (d) => -d.totalLines);
